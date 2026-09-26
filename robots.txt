@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://babudivakar.github.io/bengaluru-bites/sitemap.xml
