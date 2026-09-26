@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (matchesCategory && matchesDiet) {
         card.style.display = '';
+        card.classList.remove('fade-in');
+        card.classList.add('visible');
         card.style.animation = 'none';
         card.offsetHeight;
         card.style.animation = 'fadeInUp 0.4s ease-out';
@@ -104,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   document.querySelectorAll(
-    '.about-text, .about-image, .menu-card, .special-card, .why-card, .testimonial-card, .contact-info, .contact-form-wrapper'
+    '.about-text, .about-image, .special-card, .why-card, .testimonial-card, .contact-info, .contact-form-wrapper'
   ).forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
