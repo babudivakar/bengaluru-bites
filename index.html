@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bengaluru Bites — Homemade Catering & Baking</title>
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Bengaluru Bites Logo">
+        <span>Bengaluru Bites</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Order Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/logo.jpg" alt="Bengaluru Bites" class="hero-logo">
+      <h1>Good Food. Happier People.</h1>
+      <p class="hero-subtitle">Homemade catering & freshly baked treats for every occasion</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline">Book an Order</a>
+      </div>
+      <div class="hero-badges">
+        <div class="badge">
+          <span class="badge-icon">🥬</span>
+          <span>Veg</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🍗</span>
+          <span>Non-Veg</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🎂</span>
+          <span>Cakes</span>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">🍿</span>
+          <span>Snacks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">Our Story</span>
+          <h2>Homemade with Heart</h2>
+          <p>Bengaluru Bites is a home-based catering and baking venture born out of a passion for authentic Indian cooking. Every dish carries the warmth of a home kitchen and the richness of traditional flavours.</p>
+          <p>Whether it's a birthday cake, a party spread, a festive feast, or a box of crispy snacks — we make everything fresh to order with the finest ingredients and a whole lot of love. From intimate gatherings to large celebrations, we cater to it all.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Orders Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4.9</span>
+              <span class="stat-label">Star Rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-img-wrapper">
+            <img src="assets/logo.jpg" alt="Bengaluru Bites — Homemade with Heart">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Categories -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2>Our Menu</h2>
+        <p>Explore our delicious categories — every bite is a celebration of flavour</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-category="veg">🥬 Veg</button>
+        <button class="tab" data-category="nonveg">🍗 Non-Veg</button>
+        <button class="tab" data-category="cakes">🎂 Cakes</button>
+        <button class="tab" data-category="snacks">🍿 Snacks</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Veg Items -->
+        <div class="menu-card" data-category="veg">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #f6d365, #fda085);">
+            <span class="menu-emoji">🍛</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Veg Biryani</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Fragrant basmati rice layered with fresh vegetables and aromatic spices</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="veg">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #a8e063, #56ab2f);">
+            <span class="menu-emoji">🥘</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Paneer Butter Masala</h3>
+              <span class="price">₹220</span>
+            </div>
+            <p>Soft paneer cubes in a rich, creamy tomato-based gravy</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="veg">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="menu-emoji">🫓</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Dal Makhani</h3>
+              <span class="price">₹190</span>
+            </div>
+            <p>Slow-cooked black lentils in buttery, creamy gravy — pure comfort</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="veg">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+            <span class="menu-emoji">🥗</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chole Bhature</h3>
+              <span class="price">₹160</span>
+            </div>
+            <p>Spicy chickpea curry served with fluffy deep-fried bhature</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <!-- Non-Veg Items -->
+        <div class="menu-card" data-category="nonveg" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #f5af19, #f12711);">
+            <span class="menu-emoji">🍗</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chicken Biryani</h3>
+              <span class="price">₹250</span>
+            </div>
+            <p>Aromatic basmati rice with tender marinated chicken and spices</p>
+            <span class="veg-tag nonveg">● Non-Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="nonveg" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #eb3349, #f45c43);">
+            <span class="menu-emoji">🍖</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Mutton Curry</h3>
+              <span class="price">₹350</span>
+            </div>
+            <p>Slow-cooked mutton pieces in a rich, spicy gravy</p>
+            <span class="veg-tag nonveg">● Non-Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="nonveg" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
+            <span class="menu-emoji">🐟</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Fish Fry</h3>
+              <span class="price">₹280</span>
+            </div>
+            <p>Crispy, golden-fried fish fillets with tangy masala coating</p>
+            <span class="veg-tag nonveg">● Non-Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="nonveg" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #c94b4b, #4b134f);">
+            <span class="menu-emoji">🍢</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chicken Kebab</h3>
+              <span class="price">₹220</span>
+            </div>
+            <p>Smoky, chargrilled chicken kebabs with mint chutney</p>
+            <span class="veg-tag nonveg">● Non-Veg</span>
+          </div>
+        </div>
+
+        <!-- Cakes -->
+        <div class="menu-card" data-category="cakes" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
+            <span class="menu-emoji">🎂</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chocolate Truffle Cake</h3>
+              <span class="price">₹650</span>
+            </div>
+            <p>Rich, decadent chocolate truffle cake — a chocolate lover's dream</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cakes" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+            <span class="menu-emoji">🍰</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Butterscotch Cake</h3>
+              <span class="price">₹600</span>
+            </div>
+            <p>Light, fluffy butterscotch sponge with crunchy praline topping</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cakes" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #e44d26, #f16529);">
+            <span class="menu-emoji">🧁</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Red Velvet Cake</h3>
+              <span class="price">₹700</span>
+            </div>
+            <p>Classic red velvet with cream cheese frosting — pure elegance</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="cakes" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+            <span class="menu-emoji">🍓</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Fresh Fruit Cake</h3>
+              <span class="price">₹550</span>
+            </div>
+            <p>Light vanilla sponge topped with seasonal fresh fruits and cream</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-card" data-category="snacks" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #f2994a, #f2c94c);">
+            <span class="menu-emoji">🔺</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Samosa (4 pcs)</h3>
+              <span class="price">₹80</span>
+            </div>
+            <p>Crispy golden samosas stuffed with spiced potatoes and peas</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #834d9b, #d04ed6);">
+            <span class="menu-emoji">🧅</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Onion Pakoda</h3>
+              <span class="price">₹100</span>
+            </div>
+            <p>Crunchy onion fritters seasoned with spices — perfect tea-time snack</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #fc4a1a, #f7b733);">
+            <span class="menu-emoji">🌮</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Chicken Puff</h3>
+              <span class="price">₹60</span>
+            </div>
+            <p>Flaky puff pastry filled with spiced minced chicken</p>
+            <span class="veg-tag nonveg">● Non-Veg</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="snacks" style="display:none;">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #00b09b, #96c93d);">
+            <span class="menu-emoji">🥟</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Veg Cutlet (4 pcs)</h3>
+              <span class="price">₹90</span>
+            </div>
+            <p>Crispy vegetable cutlets with a blend of spices and herbs</p>
+            <span class="veg-tag veg">● Veg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials Section -->
+  <section class="specials" id="specials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2>Our Services</h2>
+        <p>From intimate gatherings to grand celebrations — we've got you covered</p>
+      </div>
+      <div class="specials-grid">
+        <div class="special-card featured">
+          <div class="special-badge">Most Popular</div>
+          <div class="special-emoji">🍛</div>
+          <h3>Party Catering</h3>
+          <p>Full meal catering for birthdays, housewarmings, festivals, and family get-togethers. Customisable menus for any size.</p>
+          <div class="special-price">
+            <span class="new-price">From ₹200/plate</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Enquire Now</a>
+        </div>
+        <div class="special-card">
+          <div class="special-badge">Bestseller</div>
+          <div class="special-emoji">🎂</div>
+          <h3>Custom Cakes</h3>
+          <p>Freshly baked custom cakes for birthdays, anniversaries, and celebrations. Choose your flavour, design, and size.</p>
+          <div class="special-price">
+            <span class="new-price">From ₹550</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Enquire Now</a>
+        </div>
+        <div class="special-card">
+          <div class="special-badge">New</div>
+          <div class="special-emoji">🥟</div>
+          <h3>Snack Boxes</h3>
+          <p>Curated snack boxes with samosas, cutlets, pakodas, and more — perfect for office parties, gifts, or tea-time treats.</p>
+          <div class="special-price">
+            <span class="new-price">From ₹299</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Us</span>
+        <h2>Why Bengaluru Bites?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏠</div>
+          <h3>Homemade Goodness</h3>
+          <p>Everything is prepared fresh in our home kitchen — the same love and care as cooking for family</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌿</div>
+          <h3>Fresh Ingredients</h3>
+          <p>Only the freshest, locally-sourced ingredients — no preservatives, no shortcuts, no compromises</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎨</div>
+          <h3>Custom Orders</h3>
+          <p>Every order is tailored to your taste, occasion, and guest count — tell us what you need</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎉</div>
+          <h3>Any Occasion</h3>
+          <p>Birthdays, festivals, office events, house parties — we cater to celebrations big and small</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Love from Customers</span>
+        <h2>What People Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The biryani is absolutely divine! It tastes just like my grandmother used to make. Bengaluru Bites has become our family's go-to for every celebration."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <strong>Priya S.</strong>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Ordered the chocolate truffle cake for my daughter's birthday — it was the star of the party! Moist, rich, and absolutely perfect."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <strong>Rahul M.</strong>
+              <span>Cake Lover</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The samosas and pakodas are the crunchiest I've ever had! Perfect for our office tea parties. We order every week now!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Ananya K.</strong>
+              <span>Snack Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Get in Touch</span>
+          <h2>Ready to Order?</h2>
+          <p>Reach out to us for catering bookings, custom cakes, snack boxes, or just to say hello! We'd love to serve you.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Bengaluru, Karnataka, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@bengalurubites.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏰</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Sun: 10:00 AM – 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <h3>Book an Order</h3>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email (optional)">
+            </div>
+            <div class="form-group">
+              <select required style="width:100%;padding:14px 20px;border:2px solid var(--border);border-radius:var(--radius-sm);font-family:'Poppins',sans-serif;font-size:0.95rem;color:var(--text);background:var(--white);outline:none;">
+                <option value="" disabled selected>Type of Order</option>
+                <option value="catering">Party / Event Catering</option>
+                <option value="cake">Custom Cake</option>
+                <option value="snacks">Snack Box</option>
+                <option value="combo">Combo / Bulk Order</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Tell us about your order — items, quantity, event date, number of guests, any preferences..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Order Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Bengaluru Bites" class="footer-logo">
+          <p>Homemade catering & baking. Authentic Indian flavours, freshly made to order with love.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+            <a href="#" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#specials">Specials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <a href="#menu">Veg Dishes</a>
+          <a href="#menu">Non-Veg Dishes</a>
+          <a href="#menu">Cakes</a>
+          <a href="#menu">Snacks</a>
+          <a href="#menu">Party Orders</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bengaluru Bites. Homemade Catering & Baking. Made with ❤️ in Bengaluru.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
