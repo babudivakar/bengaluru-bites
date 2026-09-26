@@ -37,27 +37,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Menu category tabs
+  // Menu category tabs + diet filters
   const tabs = document.querySelectorAll('.tab');
+  const dietBtns = document.querySelectorAll('.diet-btn');
   const menuCards = document.querySelectorAll('.menu-card');
+
+  let activeCategory = 'starters';
+  let activeDiet = 'all';
+
+  function filterMenu() {
+    menuCards.forEach(card => {
+      const matchesCategory = card.dataset.category === activeCategory;
+      const matchesDiet = activeDiet === 'all' || card.dataset.diet === activeDiet;
+
+      if (matchesCategory && matchesDiet) {
+        card.style.display = '';
+        card.style.animation = 'none';
+        card.offsetHeight;
+        card.style.animation = 'fadeInUp 0.4s ease-out';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      const category = tab.dataset.category;
-
+      activeCategory = tab.dataset.category;
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
 
-      menuCards.forEach(card => {
-        if (card.dataset.category === category) {
-          card.style.display = '';
-          card.style.animation = 'none';
-          card.offsetHeight; // trigger reflow
-          card.style.animation = 'fadeInUp 0.4s ease-out';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      // Hide diet filters for cakes (all veg)
+      const dietFilters = document.getElementById('dietFilters');
+      dietFilters.style.display = activeCategory === 'cakes' ? 'none' : 'flex';
+
+      // Reset diet filter to 'all' when switching category
+      activeDiet = 'all';
+      dietBtns.forEach(b => b.classList.toggle('active', b.dataset.diet === 'all'));
+
+      filterMenu();
+    });
+  });
+
+  dietBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeDiet = btn.dataset.diet;
+      dietBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterMenu();
     });
   });
 

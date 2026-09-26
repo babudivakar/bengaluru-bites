@@ -472,6 +472,49 @@ img {
   border-color: var(--primary);
 }
 
+/* Diet Filters */
+.diet-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.diet-btn {
+  padding: 8px 20px;
+  border: 2px solid var(--border);
+  background: var(--white);
+  border-radius: var(--radius-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.diet-btn:hover {
+  border-color: var(--accent);
+}
+
+.diet-btn.active {
+  background: var(--text);
+  color: var(--white);
+  border-color: var(--text);
+}
+
+.diet-btn[data-diet="veg"].active {
+  background: #2E7D32;
+  border-color: #2E7D32;
+  color: var(--white);
+}
+
+.diet-btn[data-diet="nonveg"].active {
+  background: #C62828;
+  border-color: #C62828;
+  color: var(--white);
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

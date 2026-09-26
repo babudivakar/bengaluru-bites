@@ -115,10 +115,16 @@
         <button class="tab" data-category="cakes">🎂 Cakes</button>
       </div>
 
+      <div class="diet-filters" id="dietFilters">
+        <button class="diet-btn active" data-diet="all">All</button>
+        <button class="diet-btn">● Veg</button>
+        <button class="diet-btn">● Non-Veg</button>
+      </div>
+
       <div class="menu-grid" id="menuGrid">
 
         <!-- ========== STARTERS ========== -->
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="nonveg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #a8e063, #f7b733);">
             <span class="menu-emoji">🍗</span>
           </div>
@@ -132,7 +138,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="nonveg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
             <span class="menu-emoji">🍢</span>
           </div>
@@ -146,7 +152,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="nonveg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #e44d26, #f16529);">
             <span class="menu-emoji">🍖</span>
           </div>
@@ -160,7 +166,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="veg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #d4a056, #8b4513);">
             <span class="menu-emoji">🧆</span>
           </div>
@@ -174,7 +180,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="veg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #00b09b, #96c93d);">
             <span class="menu-emoji">🌶️</span>
           </div>
@@ -188,7 +194,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="veg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #eb3349, #f45c43);">
             <span class="menu-emoji">🍜</span>
           </div>
@@ -202,7 +208,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="veg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
             <span class="menu-emoji">🥞</span>
           </div>
@@ -216,7 +222,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="starters">
+        <div class="menu-card" data-diet="veg" data-category="starters">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #a8e063, #56ab2f);">
             <span class="menu-emoji">🫓</span>
           </div>
@@ -232,7 +238,7 @@
 
         <!-- ========== MAIN COURSE ========== -->
         <!-- Biryanis & Rice -->
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f5af19, #f12711);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -246,7 +252,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #eb3349, #f45c43);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -260,7 +266,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -274,7 +280,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #c94b4b, #4b134f);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -288,7 +294,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #d4a056, #8b4513);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -302,7 +308,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f6d365, #fda085);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -317,7 +323,7 @@
         </div>
 
         <!-- Curries -->
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
             <span class="menu-emoji">🥘</span>
           </div>
@@ -331,7 +337,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
             <span class="menu-emoji">🥘</span>
           </div>
@@ -345,7 +351,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #fc4a1a, #f7b733);">
             <span class="menu-emoji">🥘</span>
           </div>
@@ -359,7 +365,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f093fb, #eaafc8);">
             <span class="menu-emoji">🥘</span>
           </div>
@@ -373,7 +379,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #e44d26, #f16529);">
             <span class="menu-emoji">🧀</span>
           </div>
@@ -387,7 +393,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
             <span class="menu-emoji">🫓</span>
           </div>
@@ -401,7 +407,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
             <span class="menu-emoji">🥗</span>
           </div>
@@ -415,7 +421,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #834d9b, #d04ed6);">
             <span class="menu-emoji">🥬</span>
           </div>
@@ -430,7 +436,7 @@
         </div>
 
         <!-- Rice & Noodles -->
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
             <span class="menu-emoji">🍲</span>
           </div>
@@ -444,7 +450,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #fc4a1a, #f7b733);">
             <span class="menu-emoji">🍛</span>
           </div>
@@ -458,7 +464,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #c94b4b, #4b134f);">
             <span class="menu-emoji">🍝</span>
           </div>
@@ -472,7 +478,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="maincourse" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="maincourse" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
             <span class="menu-emoji">🍚</span>
           </div>
@@ -487,7 +493,7 @@
         </div>
 
         <!-- ========== SNACKS ========== -->
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f2994a, #f2c94c);">
             <span class="menu-emoji">🔺</span>
           </div>
@@ -501,7 +507,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #834d9b, #d04ed6);">
             <span class="menu-emoji">🧅</span>
           </div>
@@ -515,7 +521,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #00b09b, #96c93d);">
             <span class="menu-emoji">🥟</span>
           </div>
@@ -529,7 +535,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="nonveg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #fc4a1a, #f7b733);">
             <span class="menu-emoji">🌮</span>
           </div>
@@ -543,7 +549,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f5af19, #f12711);">
             <span class="menu-emoji">🫔</span>
           </div>
@@ -557,7 +563,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
             <span class="menu-emoji">🥠</span>
           </div>
@@ -571,7 +577,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
             <span class="menu-emoji">🍘</span>
           </div>
@@ -585,7 +591,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="snacks" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="snacks" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #eb3349, #f45c43);">
             <span class="menu-emoji">🌶️</span>
           </div>
@@ -600,7 +606,7 @@
         </div>
 
         <!-- ========== CAKES ========== -->
-        <div class="menu-card" data-category="cakes" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="cakes" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
             <span class="menu-emoji">🎂</span>
           </div>
@@ -614,7 +620,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="cakes" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="cakes" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
             <span class="menu-emoji">🍰</span>
           </div>
@@ -628,7 +634,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="cakes" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="cakes" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #e44d26, #f16529);">
             <span class="menu-emoji">🧁</span>
           </div>
@@ -642,7 +648,7 @@
           </div>
         </div>
 
-        <div class="menu-card" data-category="cakes" style="display:none;">
+        <div class="menu-card" data-diet="veg" data-category="cakes" style="display:none;">
           <div class="menu-card-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
             <span class="menu-emoji">🍓</span>
           </div>
