@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab.classList.add('active');
 
       // Hide diet filters for all-veg categories
-      const allVegCategories = ['rice', 'breads', 'chaat', 'desserts', 'beverages'];
+      const allVegCategories = ['rice', 'breads', 'chaat', 'desserts', 'beverages', 'cakes'];
       const dietFilters = document.getElementById('dietFilters');
       dietFilters.style.display = allVegCategories.includes(activeCategory) ? 'none' : 'flex';
 
