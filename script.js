@@ -16,9 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
       navLinks.classList.remove('open');
       navToggle.classList.remove('active');
+
+      if (link.dataset.cakeLink) {
+        e.preventDefault();
+        const menuSection = document.getElementById('menu');
+        if (menuSection) {
+          menuSection.scrollIntoView({ behavior: 'smooth' });
+          setTimeout(() => {
+            const cakeTab = document.querySelector('.tab[data-category="cakes"]');
+            if (cakeTab) cakeTab.click();
+          }, 400);
+        }
+      }
     });
   });
 
