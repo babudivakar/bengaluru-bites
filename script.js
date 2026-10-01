@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dietBtns = document.querySelectorAll('.diet-btn');
   const menuCards = document.querySelectorAll('.menu-card');
 
-  let activeCategory = 'starters';
+  let activeCategory = 'soups';
   let activeDiet = 'all';
 
   function filterMenu() {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tab.classList.add('active');
 
       // Hide diet filters for all-veg categories
-      const allVegCategories = ['southindian', 'ricebreads', 'desserts', 'drinks'];
+      const allVegCategories = ['rice', 'breads', 'chaat', 'desserts', 'beverages'];
       const dietFilters = document.getElementById('dietFilters');
       dietFilters.style.display = allVegCategories.includes(activeCategory) ? 'none' : 'flex';
 
