@@ -547,15 +547,15 @@ img {
 }
 
 .menu-card-img {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .menu-emoji {
-  font-size: 3.5rem;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  display: none;
 }
 
 .menu-card-body {
